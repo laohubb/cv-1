@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+<style class="style">
+
+</style>
+
+<div class="html"></div>
+<div class="divWrapper">
+    <div class="div1"></div>
+</div>
+<script src="main.342ff5f7.js"></script>
+<style>
+    *{margin: 0;
+    padding: 0
+    }
+    .div1 {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        word-break:break-all;
+    }
+    @media (max-width: 500px) {
+        body{
+            color: red;
+        }
+        .html{
+            height: 50vh;
+            overflow: hidden;
+        }
+        .divWrapper{
+           position: absolute;
+
+             bottom: 0;
+            height: 50vh;
+            width: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div1{
+            top: unset;
+            right: unset;
+            position: absolute;
+            width: 20vh;
+            height: 20vh;
+
+        }
+        .div1::before{
+           width: 10vh;
+            height: 10vh;
+        }
+        .div1::after{
+            width: 10vh;
+            height: 10vh;
+        }
+    }
+</style>
+</body>
+
+</html>
